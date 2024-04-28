@@ -1,10 +1,8 @@
 return {
-  "tpope/vim-fugitive",
-  cmd = {"G", "Git"},
-  keys = {
-    {"<A>ga", ":Git fetch --all -p<cr>", desc = "Git fetch"},
-    {"<A>gl", ":Git pull<cr>", desc = "Git pull"},
-    {"<A>gp", ":Git push<cr>", desc = "Git push"},
-
-  },
+  'tpope/vim-fugitive',
+  requires = {
+    'tpope/vim-rhubarb', -- para soporte de GitHub
+    'tpope/vim-dispatch' -- para soporte de tareas asíncronas
+  }
 }
+

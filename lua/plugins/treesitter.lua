@@ -8,7 +8,7 @@ local treesitter_config = {
     main = "nvim-treesitter.configs",
     opts = {
         ensure_installed = {
-            "c", 
+            "c",
             "lua",
             "luadoc",
             "python",
@@ -16,7 +16,7 @@ local treesitter_config = {
         sync_install = false,
 
         auto_install = true,
-        
+
         highlight = {
             enable = true,
         },
