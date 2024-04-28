@@ -1,15 +1,14 @@
 -- Aliases:
+--
 local map = vim.keymap.set
-local default_opts = {noremap = true, silent = true}
--- vim.g.mapleader = ' '
 
 -- Save current file
-map('n', '<C-w>', ':w<CR>', default_opts)
+map('n', '<C-w>', ':w<CR>', { desc = 'Save file', noremap = true })
 
-map('n', '<C-s>', ':source %<cr>', default_opts)
+map('n', '<C-s>', ':so %<CR>', { desc = 'Reload file', noremap = true })
 
 -- Close file
-map('n', '<C-q>', '<cmd>q<cr>', {desc = 'Close file', remap = true})
+map('n', '<C-q>', '<cmd>q<cr>', { desc = 'Close file', noremap = true })
 
 -- Select all
 map('n', '<C-a>', 'gg<S-v>G', { desc = 'Select all', noremap = true })
@@ -20,7 +19,7 @@ map('n', '<C-v>', ':vsplit<Return><C-w>w', { desc = 'Split vertical', noremap = 
 
 
 -- My personal map key
-map('n', '<C-r>', ':%s/', default_opts) -- Búscar y remplazar
+map('n', '<C-r>', ':%s/', { desc = 'Search and remplace', noremap = true }) -- Búscar y remplazar
 -- Para reemplazar, utiliza el comando :%s/patrón/reemplazo/g.
 -- Donde patrón es el texto que deseas reemplazar y reemplazo es el nuevo texto.
 -- El modificador g al final del comando reemplaza todas las apariciones en
@@ -28,7 +27,7 @@ map('n', '<C-r>', ':%s/', default_opts) -- Búscar y remplazar
 
 
 -- Call Neotree
-map('n', '<C-n>', '<cmd>Neotree reveal toggle<cr>', defaul_opts)
+map('n', '<C-n>', '<cmd>Neotree reveal toggle<cr>', { desc = 'Call Neotree', noremap = true, silent = true })
 
 -- Call Lazy
 map("n", "<C-l>", "<cmd>Lazy<CR>", { noremap = true, silent = true, desc = "Open LazyVim" })

@@ -3,7 +3,6 @@
 -- Aliases:
 local opt = vim.opt
 
-
 -- Set up appearance
 opt.encoding = 'utf8'
 opt.number = true

@@ -25,42 +25,42 @@ return {
   end,
   keys = {
     {
-      "<leader>pp",
+      "<A>pp",
       function()
         require('telescope.builtin').git_files({ show_untracked = true })
       end,
       desc = "Telescope Git Files",
     },
     {
-      "<leader>pe",
+      "<A>pe",
       function()
         require("telescope.builtin").buffers()
       end,
       desc = "Telescope buffers",
     },
     {
-      "<leader>gs",
+      "<A>gs",
       function()
         require("telescope.builtin").git_status()
       end,
       desc = "Telescope Git status",
     },
     {
-      "<leader>gc",
+      "<A>gc",
       function()
         require("telescope.builtin").git_bcommits()
       end,
       desc = "Telescope Git status",
     },
     {
-      "<leader>gb",
+      "<A>gb",
       function()
         require("telescope.builtin").git_branches()
       end,
       desc = "Telescope Git branches",
     },
     {
-      "<leader>rp",
+      "<A>rp",
       function()
         require("telescope.builtin").find_files({
           prompt_title = "Plugins",
@@ -79,21 +79,21 @@ return {
       end
     },
     {
-      "<leader>pf",
+      "<A>pf",
       function()
         require('telescope.builtin').find_files()
       end,
       desc = "Telescope Find Files",
     },
     {
-      "<leader>ph",
+      "<A>ph",
       function()
         require("telescope.builtin").help_tags()
       end,
       desc = "Telescope Help"
     },
     {
-      "<leader>bb",
+      "<A>bb",
       function()
         require("telescope").extensions.file_browser.file_browser({ path = "%:h:p", select_buffer = true })
       end,
