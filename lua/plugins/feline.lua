@@ -109,31 +109,30 @@ local function config(_, opts)
    },
   },
 
-  git_branch = {
-   provider = function()
+ git_branch = {
+  provider = function()
     local git = require('feline.providers.git')
     local branch, icon = git.git_branch()
     local s
-    if #branch > 0 then
-     s = string.format(' %s%s ', icon, branch)
+    if branch and #branch > 0 then
+      s = string.format(' %s%s ', icon, branch)
     else
-     s = string.format(' %s ', 'Untracked')
+      s = string.format(' %s ', icon or 'Untracked')
     end
     return s
-   end,
-   hl = { fg = palette.bg0, bg = palette.fg3 },
-   left_sep = {
+  end,
+  hl = { fg = palette.bg0, bg = palette.fg3 },
+  left_sep = {
     always_visible = true,
     str = string.format('%s%s', separators.block, separators.slant_right),
     hl = { fg = palette.white.base, bg = palette.fg3 },
-   },
-   right_sep = {
+  },
+  right_sep = {
     always_visible = true,
     str = separators.slant_right,
     hl = { fg = palette.fg3, bg = palette.bg0 },
-   },
   },
-
+},
   -- table.insert(components.active[left], {
   --  provider = function()
   --   local status = git_diff('added')
