@@ -89,7 +89,7 @@ function M.setup()
         end
       end, { "i", "s" }),
       ["<Tab>"] = cmp.mapping.select_prev_item(),
-      ["<CR>"] = cmp.mapping.confirm {
+      ["<C-y>"] = cmp.mapping.confirm {
         behavior = cmp.ConfirmBehavior.Insert,
         select = true,
       },
