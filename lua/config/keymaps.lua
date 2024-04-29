@@ -7,7 +7,7 @@ map('n', '<C-w>', ':w<CR>', { desc = 'Save file', noremap = true })
 map('n', '<C-e>', ':E<CR>', { desc = 'Open Explore', noremap = true })
 
 -- Reload fil
-map('n', '<C-s>', ':so %<CR>', { desc = 'Reload file', noremap = true })
+map('n', '<C-s>', ':so<CR>', { desc = 'Reload file', noremap = true })
 
 -- Close file
 map('n', '<C-q>', '<cmd>q<cr>', { desc = 'Close file', noremap = true })
