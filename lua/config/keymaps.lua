@@ -36,11 +36,11 @@ map('n', 'N', 'Nzzzv', { desc = "Goes to the prev result on the search and put t
 
 -- Fugitive keymaps
 map('n', '<C-g>', ':Git<CR>', { desc = 'Call git' })
-map('n', '<A>gd', ':Git add .<CR>', { desc = 'Git add all files' })
-map('n', '<A>gc', ':Git commit -m ""<left><left>', { desc = 'Git commit with message' })
-map('n', '<A>gp', ':Git push<CR>', { desc = 'Git push' })
-map('n', '<A>ga', ':Git fetch --all -p<CR>', { desc = 'Git fetch' })
-map('n', '<A>gl', ':Git pull<CR>', { desc = 'Git pull' })
+map('n', '<leader>gd', ':Git add .<CR>', { desc = 'Git add all files' })
+map('n', '<leader>gc', ':Git commit -m ""<left><left>', { desc = 'Git commit with message' })
+map('n', '<leader>gp', ':Git push<CR>', { desc = 'Git push' })
+map('n', '<leader>ga', ':Git fetch --all -p<CR>', { desc = 'Git fetch' })
+map('n', '<leader>gl', ':Git pull<CR>', { desc = 'Git pull' })
 
 -- Configuración de Fugitive
 vim.g.fugitive_gitlab_domains = { 'https://gitlab.com' }

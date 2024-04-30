@@ -12,5 +12,5 @@ vim.bo.smartindent = true          -- Indentación inteligente
 vim.cmd('syntax enable')            -- Activar resaltado de sintaxis
 vim.cmd('filetype plugin indent on') -- Activar detección de tipo de archivo
 
--- Ejecutar script Python con F5
-map('n', '<F5>', ':w<CR>:!python3 %<CR>', { noremap = true })
+-- Mapeo de teclas con <F%> para abrir un terminal horizontal en la parte inferior y ejecutar Python
+map("n", "<F5>", ":belowright split term://python3 %<CR>", { noremap = true })
