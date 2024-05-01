@@ -1,4 +1,12 @@
+-- Alias
 local map = vim.api.nvim_set_keymap
+local opt = vim.opt
+
+-- Set up appearance
+opt.encoding = 'utf8'
+opt.number = true
+opt.relativenumber = true
+opt.termguicolors = true
 
 -- Configuración básica
 vim.opt.tabstop = 4                  -- Ancho de tabulación = 4 espacios

@@ -1,3 +1,11 @@
+-- Alias
+local opt = vim.opt
+
+-- Set up appearance
+opt.encoding = 'utf8'
+opt.number = true
+opt.relativenumber = true
+opt.termguicolors = true
 
 vim.bo.tabstop = 2
 vim.bo.softtabstop = 2
