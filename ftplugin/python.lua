@@ -19,6 +19,7 @@ vim.bo.smartindent = true
 vim.cmd('syntax enable')
 vim.cmd('filetype plugin indent on')
 
+-- Ejecutar script Python con F5
 -- Definición de la función para abrir un terminal horizontal en la parte inferior con un tamaño personalizado
 local function open_terminal()
   local width = vim.o.columns * 0.8 -- 80% del ancho de la ventana

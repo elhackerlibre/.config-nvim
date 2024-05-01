@@ -3,12 +3,6 @@
 -- Aliases:
 local opt = vim.opt
 
--- Set up appearance
--- opt.encoding = 'utf8'
--- opt.number = true
--- opt.relativenumber = true
--- opt.termguicolors = true
-
 -- Clipboard
 opt.clipboard:append("unnamedplus")
 
